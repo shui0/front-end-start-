@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>每日新闻</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <!-- 页眉 -->
+    <header role="banner">
+        <h1><a href="/">每日新闻</a></h1>
+
+        <!-- 主导航 -->
+        <nav aria-label="主菜单" role="navigation">
+            <ul>
+                <li><a href="/domestic">国内新闻</a></li>
+                <li><a href="/international">国际新闻</a></li>
+                <li><a href="/finance">财经频道</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 面包屑导航 -->
+    <nav>
+        <ol>
+            <ol><a href="/">首页</a></ol>
+            <ol>新闻</ol>
+        </ol>
+    </nav>
+
+    <!-- 内容 -->
+     <main role="main">
+            <!-- 焦点新闻 -->
+             <article>
+                <header>
+                    <h2 id="article-heading">全国两会顺利闭幕，通过多项民生法案</h2>
+                    <p>作者：<span>王记者</span> | 发布于：<time datetime="2024-03-11">3月11日</time></p>
+                </header>
+                
+                <!-- 新闻正文 -->
+                 <section>
+                    <h3 id="content-heading" class="visually-hidden">正文内容</h3>
+                    <figure>
+                        <img src="lianghui.jpg" alt="人大代表举手表决现场" width="800" height="450">
+                        <figcaption>第十四届全国人民代表大会第三次会议现场</figcaption>
+                    </figure>
+
+                    <p>在今天上午的闭幕会议上，代表们审议通过了包括...</p>
+                    <!-- 嵌套文章章节 -->
+                    <section aria-labelledby="bill-details">
+                        <h4 id="bill-details">重点通过法案</h4>
+                        <ul>
+                            <li>《医疗保障法修订案》</li>
+                            <li>《义务教育资源均衡分配方案》</li>
+                        </ul>
+                    </section>
+                 </section>
+
+
+            </article>
+
+            <!-- 新闻评论 -->
+             <section>
+                <h2 id="comments-heading">读者评论</h2>
+                <article class="comment">
+                    <footer>
+                        <p>用户：<strong>张三</strong> 发布于 <time datetime="2024-03-11T09:30">3月11日 09:30</time></p>
+                    </footer>
+                    <p>这些法案真正体现了以人民为中心的发展思想！</p>
+                </article>
+             </section>
+     </main>
+
+     <!-- 侧边栏 -->
+      <aside role="complementary">
+        <h2>今日热点</h2>
+        <ol>
+            <li><a href="/hot/1">央行调整存款准备金率</a></li>
+            <li><a href="/hot/2">新能源汽车补贴新政</a></li>
+        </ol>
+      </aside>
+
+      <!-- 页脚 -->
+       <footer>
+            <address>
+                联系我们：<a href="mailto:news@daily.com">news@daily.com</a>
+            </address>
+            <p>&copy; 2024 每日新闻 版权所有</p>
+            <!--&copy显示版权符号  -->
+       </footer>
+
+
+</body>
+</html>

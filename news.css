@@ -1,0 +1,22 @@
+body{
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav ul{
+    /* 去掉列表标记 */
+    list-style: none;
+    /* 弹性盒子 */
+    display: flex;
+    padding: 0;
+    /* 列间隙 */
+    gap: 20px;
+}
+
+article {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
