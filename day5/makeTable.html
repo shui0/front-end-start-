@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        table = document.createElement('table');
+        table.setAttribute('border',1);
+        var row ,cell;
+        for (var i = 0;i<3;i++){
+            row = document.createElement('tr');
+            table.appendChild(row);
+            for (var j = 0;j<3;j++){
+                cell = document.createElement('td');
+                cell.innerHTML = (i+1)+'行'+(j+1)+'列';
+                row.appendChild(cell);
+            }
+        }
+        document.body.appendChild(table);
+
+    </script>
+</body>
+</html>
